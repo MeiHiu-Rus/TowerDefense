@@ -8,14 +8,18 @@ TagManager:
   - enemyU1Weapon
   - blueUnit
   - redUnit
+  - goodU2Weapon
+  - enemyU2Weapon
+  - goodU3Weapon
+  - enemyU3Weapon
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - blue
   - Water
   - UI
-  - 
+  - red
   - 
   - 
   - 

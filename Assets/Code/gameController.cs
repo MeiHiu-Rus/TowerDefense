@@ -21,8 +21,8 @@ public class NewBehaviourScript : MonoBehaviour
     public GameObject unitLock2;
     public GameObject unitLock3;
 
-    //public bluePlaneScript bluePlane;
-    //public redPlaneScript redPlane;
+    public bluePlaneScript bluePlane;
+    public redPlaneScript redPlane;
 
     public int spawnPointNumber = 1;
     public Transform spawnPointOne;
@@ -169,10 +169,15 @@ public class NewBehaviourScript : MonoBehaviour
     {
         gasCount -= 8;
         gasCountText.text = gasCount.ToString();
-        //bluePlane.attackPlane();
+        bluePlane.attackPlane();
     }
 
     public void restartGame()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(1);
+    }
+    public void exitGame()
     {
         SceneManager.LoadScene(0);
     }
